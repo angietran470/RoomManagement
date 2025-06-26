@@ -1,6 +1,6 @@
 # Introduction
 
-Appilation that allows users to reserve a room by entering events.
+Application that allows users to reserve a room by entering events.
 
 ## Stack
 
