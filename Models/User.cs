@@ -16,5 +16,5 @@ public class User
     public DateTime CreatedAt { get; set; }
     public DateTime? UpdatedAt { get; set; }
     public string? Email { get; set; } = "";
-    public int? Phone { get; set; }
+    public long? Phone { get; set; }
 }

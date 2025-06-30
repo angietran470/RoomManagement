@@ -36,6 +36,11 @@ export default defineNuxtConfig({
           changeOrigin: true,
           secure: false
         },
+        '/hub':{
+          target: 'https://localhost:5001/',
+          changeOrigin: true,
+          secure: false
+        }
       },
     }
   },

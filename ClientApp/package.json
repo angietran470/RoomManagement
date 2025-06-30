@@ -14,6 +14,7 @@
   "dependencies": {
     "@daypilot/daypilot-lite-vue": "^4.1.0",
     "@formkit/nuxt": "^1.6.9",
+    "@microsoft/signalr": "^8.0.7",
     "@nuxt/fonts": "^0.11.4",
     "@nuxt/icon": "^1.13.0",
     "@nuxt/image": "^1.10.0",
