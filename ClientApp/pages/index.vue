@@ -27,8 +27,7 @@
 <script setup>
 import { DayPilot, DayPilotMonth } from '@daypilot/daypilot-lite-vue'
 import { ref, onMounted } from 'vue'
-import{EventForm} from '#components'
-
+import{EventForm, Reminder} from '#components'
 
 const event= ref()
 const eventFormRef= ref()
@@ -52,9 +51,13 @@ const months = [
 const overlay= useOverlay()
 const modal = overlay.create(EventForm)
 const toast= useToast()
+const reminderModal= overlay.create(Reminder)
 
 if(localStorage.getItem('token')==undefined||localStorage.getItem('token')==null){
     navigateTo('/Login')
+}
+else{
+    reminderModal.open()
 }
 const config = ref({
     locale: 'en-us',
